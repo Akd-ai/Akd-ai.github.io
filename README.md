@@ -1,2 +1,2 @@
 # Akd-ai.github.io
- These are links to my pages
+ These are various social media handles
