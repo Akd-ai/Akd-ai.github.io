@@ -88,10 +88,6 @@ button:hover {
   background-color: var(--offwhite-shade);
 }
 
-.showhamburger {
-    display: block;
-}
-
 .main-card {
   background-color: var(--secondary-purple);
   /* margin: auto; */
@@ -139,6 +135,19 @@ button:hover {
   border-collapse: collapse;
   border: none;
   border-radius: 10px;
+}
+
+.font-i {
+    font-size: 16;
+    color: var(--secondary-purple);
+    background-color: none;
+    
+}
+.font-i:hover {
+    font-size: 16;
+    color: var(--primary-white);
+    background-color: none;
+    
 }
 
 button.card-btn {
