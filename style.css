@@ -36,7 +36,7 @@ nav {
 .nav-links ul {
   display: flex;
   align-items: center;
-  margin: 30px;
+  /* margin: 30px; */
   height: auto;
   gap: 10px;
 }
@@ -86,6 +86,10 @@ button:hover {
 .hamburger:hover {
   color: var(--purple-shade);
   background-color: var(--offwhite-shade);
+}
+
+.showhamburger {
+    display: block;
 }
 
 .main-card {
@@ -200,6 +204,7 @@ footer {
 
   .nav-links {
     display: none;
+    transition: all 0.8s;
   }
 
   .hamburger {
