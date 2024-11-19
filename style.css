@@ -77,15 +77,13 @@ button:hover {
 
 .hamburger {
   display: none;
-  /* position: absolute; */
-  font-size: 20px;
-  color: var(--offwhite-shade);
-  /* background-color: var(--primary-white); */
+  color: var(--primary-white);
   cursor: pointer;
 }
+
 .hamburger:hover {
   color: var(--purple-shade);
-  background-color: var(--offwhite-shade);
+  
 }
 
 .main-card {
@@ -218,5 +216,9 @@ footer {
 
   .hamburger {
     display: block;
+  }
+
+  .hamburger button i{
+    font-size: 20px;
   }
 }
