@@ -18,23 +18,43 @@ body {
 header {
   background-color: var(--secondary-purple);
   width: 100%;
+  margin-bottom: 5px;
 }
 
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .logo h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 700;
 }
 
-nav ul {
-  display: inline;
+.nav-links ul {
+  display: flex;
+  align-items: center;
   margin: 30px;
+  height: auto;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--offwhite-shade);
+  background-color: var(--purple-shade);
+  transition: all 0.5s;
 }
 
 button {
@@ -55,27 +75,24 @@ button:hover {
   transition: all 0.5s;
 }
 
-a {
-  text-decoration: none;
-  color: var(--white-color);
+.hamburger {
+  display: none;
+  /* position: absolute; */
   font-size: 18px;
-  font-weight: 700;
-  padding: 8px;
-  border-radius: 3px;
+  color: var(--offwhite-shade);
+  background-color: var(--primary-white);
   cursor: pointer;
 }
-
-a:hover {
-  text-decoration: underline;
-  color: var(--offwhite-shade);
-  background-color: var(--purple-shade);
-  transition: all 0.5s;
+.hamburger:hover {
+  color: var(--purple-shade);
+  background-color: var(--offwhite-shade);
 }
 
 .main-card {
   background-color: var(--secondary-purple);
   /* margin: auto; */
   height: auto;
+  padding: 0;
 }
 
 .logo-img {
@@ -92,6 +109,7 @@ a:hover {
 
 .all-cards {
   display: flex;
+  
   /* justify-content: space-evenly; */
   /* margin-top: 30px; */
   /* border-radius: 15px; */
@@ -101,23 +119,22 @@ a:hover {
 .card2,
 .card3 {
   max-width: 300px;
-  margin-left: 20px;
+  margin-left: 40px;
+  margin: auto;
+  margin-bottom: 20px;
   color: var(--secondary-purple);
   background-color: var(--primary-white);
-  margin: auto;
   box-shadow: 0 4px 8px 0 var(--shadow);
   text-align: center;
   font-size: 18px;
   border-radius: 15px;
   gap: 5px;
-  
 }
 
 .cards-img {
-    border-collapse: collapse;
-    border: none;
-    border-radius: 10px;
-    
+  border-collapse: collapse;
+  border: none;
+  border-radius: 10px;
 }
 
 button.card-btn {
@@ -144,11 +161,22 @@ footer {
   background-color: var(--secondary-purple);
   top: 0;
   height: 40px;
+  margin-top: 10px;
   text-align: center;
   justify-content: center;
 }
 
-@media (max-width: 700px) {
+
+
+
+
+
+
+
+
+
+/* Mobile responsive design */
+@media screen and (max-width: 768px) {
   .all-cards {
     display: inline-block;
     transition: all 0.5s;
@@ -157,8 +185,8 @@ footer {
   .card1,
   .card2,
   .card3 {
-  margin-top: 10px;
-  margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     /* max-width: 300px;
   margin-left: 20px;
   padding: 5px;
@@ -168,5 +196,13 @@ footer {
   font-size: 18px;
   border-radius: 15px;
   gap: 5px; */
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
   }
 }
