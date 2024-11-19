@@ -1,3 +1,4 @@
+
 :root {
     --primary-white: #ffffff;
     --secondary-purple: #4F0341;
@@ -6,11 +7,16 @@
     --white-color: #f0ffff;
     --offwhite-shade: #e8e6f1;
     --purple-shade: #690056;
+    --shadow: rgba(0, 0, 0, 0.2);
 }
+
+
 
 body {
     background-color: var(--primary-color);
    text-align: center;
+   color: var(--primary-white);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header {
     background-color: var(--secondary-purple);
@@ -20,26 +26,46 @@ header {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 
-.nav-img {
-    width: 100px;
-    border-radius: 15px;
-    margin-left: 30px;
+.logo h2{
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 nav ul {
+    display: inline;
     margin: 30px;
+}
+
+button {
+    color: var(--secondary-purple);
+    background-color: var(--primary-white);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+padding: 4px;
+color: var(--offwhite-shade);
+background-color: var(--purple-shade);
 }
 
 a {
     color: var(--white-color);
     font-size: 18px;
+    font-weight: 700;
     padding: 8px;
     border-radius: 3px;
+    cursor: pointer;
 }
+
 a:hover{
     color: var(--offwhite-shade);
     background-color: var(--purple-shade);
@@ -47,14 +73,58 @@ a:hover{
 
 .main-card {
     background-color: var(--secondary-purple);
-    /* min-width: 250px;
-    max-width: 500px; */
-    /* height: 500px; */
-    /* justify-self: center; */
-    margin: 30px auto;
+    /* margin: auto; */
+    height: auto;
 }
 
 .logo-img {
-    width: 50%;
-    border-radius: 200px;
+    width: 20%;
+    border-radius: 15em;
+    margin-top:  20px;
+}
+
+.main-head {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.all-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.card1, .card2, .card3{
+    max-width: 300px;
+    /* margin-right: 20px; */
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+    text-align: center;
+    font-size: 18px;
+    border-radius: 15px;
+    
+}
+
+button.card-btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: var(--secondary-purple);
+    background-color: var(--primary-white);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+
+footer {
+    background-color: var(--secondary-purple);
+    top: 0;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
 }
