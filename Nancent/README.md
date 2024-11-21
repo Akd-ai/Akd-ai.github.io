@@ -12,7 +12,7 @@
 
 ## Screenshot
 
-- (path/Nancent\design\Screenshot.jpg)
+- (path/Nancent\design\design.png)
 
 
 ## Built With
