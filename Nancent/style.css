@@ -356,7 +356,7 @@ section.helping {
   display: block;
   text-align: center;
   padding: 40px;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .before-foot h2 {
@@ -364,6 +364,72 @@ section.helping {
   overflow: wrap;
 }
 
+/* footer {
+  background-color: var(--dark-gray);
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  text-align: left;
+}
+footer h4 {
+  color: var(--white);
+}
+
+footer .footer-logo {
+  color: var(--text-gray);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo p {
+  margin: 20px 0;
+}
+.footer-logo p:first-of-type {
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+.footer-logo p:last-of-type {
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+
+.social-medias a img {
+  background-color: var(--text-gray);
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 0;
+}
+
+footer .company {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-links ul li a {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-links ul a {
+  display: block;
+}
+
+.stay-up-to-date  {
+  display: inline;
+} */
+
 footer {
   background-color: var(--dark-gray);
+  width: 100%;
+  padding: 30px;
+  font-size: 1rem;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  color: white;
 }
