@@ -1,6 +1,16 @@
+
+const navLinks = document.querySelector('.nav-links');
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
+
+// Navigation hamburger code
+function showLinks() {
+    navLinks.classList.toggle(".active");
+}
+
+// Slideshow Code
 //Next and Prev controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
